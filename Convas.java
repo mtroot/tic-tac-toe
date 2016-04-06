@@ -1,5 +1,5 @@
 /**
- *  Класс реализующий игровое поле
+ *  Класс реализующий игровое поле | Class implements playing field
  *  @author Timur Muratov
  *  06/04/2016
  */
@@ -7,10 +7,10 @@ public class Convas {
     int[][] matrix = new int[3][3];
 
     /**
-     * Метод выводит игровое поле на экран
-     * пустая ячейка отмечена - "."
-     * ход 1го игрока - "Х"
-     * ход 2го игорка - "О"
+     * Метод выводит игровое поле на экран | method draws playing field to display
+     * пустая ячейка отмечена | empty cell - "."
+     * ход 1го игрока | 1st player - "Х"
+     * ход 2го игорка | 2nd player - "О"
      */
     public void print(){
         for (int i = 0; i < matrix.length; i++) {
@@ -35,13 +35,13 @@ public class Convas {
     }
 
     /**
-     * Устанавливает в матрицу игрового поля ход игрока,
-     * если ячейка свободно, ход устанавливается и возвращается true,
-     * если же ячейка уже занята, возвращает false
+     * Устанавливает в матрицу игрового поля ход игрока, | set player change in game matrix
+     * если ячейка свободна, ход устанавливается и возвращается true, | if cell is empty then cell will change and method return true
+     * если же ячейка уже занята, возвращает false | if cell is not empty, method return false
      * @param x
      * @param y
      * @param idGamer
-     * @return успех вставки (true or false)
+     * @return успех вставки | success (true or false)
      */
     private boolean setInMatrix(int x, int y, int idGamer){
         if(matrix[y][x] != 0) return false;
@@ -50,11 +50,11 @@ public class Convas {
     }
 
     /**
-     * Переводит значение позиции (1-9: подобие правой числовой панели на клавиатуре),
-     * в соответствии с заданными правилами, в матричную координату.
+     * Переводит значение позиции (1-9: подобие правой числовой панели на клавиатуре), | method transforms position number(1 to 9)
+     * в соответствии с заданными правилами, в матричную координату. | to matrix cell.
      * @param position
      * @param idGamer
-     * @return успех вставки (true or false)
+     * @return успех вставки | success (true or false)
      */
     public boolean setPosition(int position, int idGamer){
         switch (position){

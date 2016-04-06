@@ -1,7 +1,7 @@
 import java.util.Random;
 
 /**
- * Логика игрока - компьютер | logic
+ * Логика игрока - компьютер | player logic - computer
  * @author Timur Muratov
  * 06/04/2016
  */
@@ -13,7 +13,7 @@ public class Machine extends Gamer {
 
     @Override
     public void step() {
-        System.out.println("Ход компьютера (id: " + id + ")");
+        System.out.println("Ход компьютера | comp step (id: " + id + ")");
         boolean success = false;
         while (!success) {
             int position = random.nextInt(9) + 1;
@@ -28,6 +28,6 @@ public class Machine extends Gamer {
 
     @Override
     public String who() {
-        return "Компьютер";
+        return "Компьютер | Computer";
     }
 }

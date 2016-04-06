@@ -1,17 +1,17 @@
 
 /**
- * Класс выражающий правила игры,
- * он определяет какой игрок выиграл,
- * либо же если произошла патовая ситуация.
+ * Класс выражающий правила игры, | class implements game rules
+ * он определяет какой игрок выиграл, | it define who is winner
+ * либо же если произошла патовая ситуация. | or game take pat situation
  * @author Timur Muratov
  * 06/04/2016
  */
 public class GameDirect {
     /**
-     * Метод проверяет есть ли выиграшная ситуация
-     * и возвращает id победителя.
-     * Если же никто пока не выиграл, возвращает 0.
-     * Если ходов больше нет и никто не выиграл - 3.
+     * Метод проверяет есть ли выиграшная ситуация | method checks whether there is win situation
+     * и возвращает id победителя. | and return win player id
+     * Если же никто пока не выиграл, возвращает 0. | if nobody won yet return 0
+     * Если ходов больше нет и никто не выиграл - 3. | if there are no more move and nobody won - return 3
      * @param convas
      * @return 0 - 3
      */

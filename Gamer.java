@@ -1,5 +1,5 @@
 /**
- * Логика игрока
+ * Логика игрока | player logic
  * @author Timur Muratov
  * 06/04/2016
  */
@@ -13,13 +13,13 @@ public abstract class Gamer {
     }
 
     /**
-     * логический ход игрока
+     * логический ход игрока | player move
      */
     public abstract void step();
 
     /**
-     * Возвращает кто это
-     * @return "Компьютер" или "Человек"
+     * Возвращает кто это | return who am i
+     * @return "Компьютер" или "Человек" | "Computer" or "Human"
      */
     public abstract String who();
 }
