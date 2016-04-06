@@ -26,3 +26,25 @@ main() находиться в классе Game
 ###TODO###
 реализовать стратегию игрока Machine
 
+--------------------------------------------------------
+## Game tic-tac-toe##
+
+Simple console implementation
+
+***More about game implementation***
+
+*class Game* unites all classes, and runs game process by methods *start()*, *run()*, *end()* (in this order).
+
+*class ConsoleHelper* - class for input, gamer inputs data by its static methods. All exceptions handle in this class.
+
+*class Convas* implaments playing field. It draws convas to console over method *print()* and sets values in the convas over method *setPosition(int position, int idGamer)*.
+
+*class GameDirect* implements game rules. It checks current condition and defines result: if one of the players won class returns player id, in other case, class defines game continues or reached pat situation.
+
+*class Gamer* is abstract class defined logic of player. Basic moves are *step()* (one step in game) and *who()* (print player name (Computer or Human))
+
+*classes Human and Machine* are children of class Gamer. Classes implements that logic.
+
+In this moment, machine stategy is very stupid (random)
+
+***TODO*** -> implements machine strategy
