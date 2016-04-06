@@ -1,9 +1,7 @@
-package game1;
-
 import java.util.Random;
 
 /**
- * Логика игрока - компьютер
+ * Логика игрока - компьютер | logic
  * @author Timur Muratov
  * 06/04/2016
  */

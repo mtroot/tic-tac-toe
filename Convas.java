@@ -1,5 +1,3 @@
-package game1;
-
 /**
  *  Класс реализующий игровое поле
  *  @author Timur Muratov

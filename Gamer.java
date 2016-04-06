@@ -1,5 +1,3 @@
-package game1;
-
 /**
  * Логика игрока
  * @author Timur Muratov
